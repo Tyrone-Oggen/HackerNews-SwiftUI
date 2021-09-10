@@ -17,6 +17,9 @@ struct ContentView: View {
             }
             .navigationBarTitle("Hacker News")
         }
+        .onAppear(perform: {
+            networkManager.fetchData()
+        })
     }
 }
 
