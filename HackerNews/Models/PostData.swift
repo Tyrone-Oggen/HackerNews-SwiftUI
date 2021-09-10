@@ -19,5 +19,6 @@ struct Post: Decodable, Identifiable {
     let objectID: String
     let points: Int
     let title: String
-    let url: String
+    //url string made optional because the value is sometimes null
+    let url: String?
 }
